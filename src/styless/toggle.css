@@ -1,0 +1,152 @@
+:root {
+    /* sunny side */
+    --blue-background: #c2e9f6;
+    --blue-border: #108DAD;
+    --blue-color: #96dcee;
+    --yellow-background: #fffaa8;
+    --yellow-border: #f5eb71;
+    /* dark side */
+    --indigo-background: #808fc7;
+    --indigo-border: #808BBC;
+    --indigo-color: #6b7abb;
+    --gray-border: #e8e8ea;
+    --gray-dots: #e8e8ea;
+}
+
+@keyframes reverse {
+    0% {
+        left: 27px;
+        width: 20px;
+    }
+    60% {
+        left: 3px;
+        width: 30px;
+    }
+    100% {
+        left: 3px;
+    }
+}
+    
+@keyframes switch {
+    0% {
+        left: 3px;
+    }
+    60% {
+        left: 3px;
+        width: 30px;
+    }
+    100% {
+        left: 27px;
+        width: 15px;
+        border-radius: 40px;
+    }
+}
+
+.toggle--checkbox {
+    opacity: 0;
+}
+
+.toggle--checkbox:focus + .toggle--label {
+    outline: solid 3px var(--button-border);
+    transition: outline 100ms ease-in;
+}
+
+.container--toggle {
+    display: grid;
+    place-items: center;
+    min-height: 60px;
+    position: relative;
+    grid-area: toggle;
+    margin-top: 20px;
+    margin-left: 190px
+}
+
+/* background */
+.toggle--label {
+    width: 50px;
+    height: 20px;
+    background: var(--indigo-color);
+    border-radius: 100px;
+    border: 3px solid var(--indigo-border);
+    display: flex;
+    position: relative;
+    top:-90px;
+    left:350px;
+    transition: all 350ms ease-in;
+    color: var(--indigo-color);
+}
+
+.toggle--checkbox:checked + .toggle--label {
+    background: var(--blue-color);
+    color: var(--blue-color);
+    border-color: var(--blue-border);
+}
+
+/* sun and moon */
+.toggle--checkbox:checked + .toggle--label:before {
+    animation-name: reverse;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    transition: all 360ms ease-in;
+    background: var(--yellow-background);
+    border-color: var(--yellow-border);
+}
+
+.toggle--label:before {
+    animation-name: switch;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 3px solid var(--gray-border);
+    top: 0px;
+    left: 3px;
+    position: absolute;
+    border-radius: 40px;
+    background: white;
+}
+
+/* moon dimples */
+.toggle--label:after {
+    transition-delay: 0ms;
+    transition: all 250ms ease-in;
+    position: absolute;
+    content: '';
+    
+    left: 80px;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: transparent;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.toggle--checkbox:checked + .toggle--label:after {
+    transition-delay: 50ms;
+    opacity: 10;
+}
+
+/* clouds */
+.toggle--checkbox:checked + .toggle--label .toggle--label-background {
+    width: 5px;
+    left: 65px;
+    top: 22px;
+}
+
+.toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
+    top: -4px;
+    left: -5px;
+    width: 20px;
+    height: 5px;
+}
+
+.toggle--checkbox:checked + .toggle--label .toggle--label-background:after {
+    top: 3px;
+    width: 20px;
+    height: 5px;
+    left: -10px;
+}
+
+/* stars */

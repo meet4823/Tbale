@@ -1,0 +1,13 @@
+#foot
+{
+  Background-color:#004990;
+ text-align:center;
+ width: 100%;
+ bottom: 0;
+ color: white;
+ font-size: 20px;
+}
+#black
+{
+  background-color:var(--navcolor);
+}

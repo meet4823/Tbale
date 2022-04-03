@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+#nav
+{
+background-color: rgb(32, 30, 30);
+color:#ffffff;
+font-size:18px;
+font-family:'Barlow';
+font-weight:600;
+text-decoration: none;
+height: 60px;
+}
+#reg
+{
+  color:white;
+  text-decoration: none;
+  margin-left: 80px;
+ 
+}
+#reg2
+{
+    color:white;
+    text-decoration: none;
+    margin-left: 700px;
+}
+#text
+{
+    
+    text-decoration: none;
+  padding: 30px;
+  color:white;
+}

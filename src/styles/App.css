@@ -1,0 +1,18 @@
+
+
+
+
+.light {
+  --primary-color:#f0f0f0;
+ --secondary-color:white;
+ --ternary-color:black;
+
+}
+
+/* --light-text is fine on on the first 3, --dark-text is fine on all of them, --dark-text and dark-background are fine as text on --accent */
+.dark {
+ --primary-color:#212120;
+ --secondary-color:rgb(95,89,89);
+ --ternary-color:#A8A8A8;
+
+}

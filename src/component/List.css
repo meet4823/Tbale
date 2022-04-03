@@ -1,0 +1,121 @@
+
+/*Theme*/
+
+
+#main
+{
+    background-color:	var(--primary-color);
+}
+#top
+{
+  background-color: #801818;
+  height: 10px;
+  margin-left:150px;
+    margin-right: 149px;
+}
+#white
+{
+    background-color: var(--secondary-color);
+    margin-left:150px;
+    margin-right: 150px;
+}
+#imgr
+{
+  height: 450px;
+  width: 1220px;
+  
+}
+#abc{
+  width:100%;
+  height:100vh;
+  background-image: url("sound.jpg");
+  height: 500px;
+  width: 1220px;
+  background-size: cover;
+}
+nav{
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  line-height: 50px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 150px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+  background-color:#801818;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+/*SerachBox*/
+#or{
+  font-family:barlow;
+  padding-left:63%;
+  margin-top: -35px;
+}
+
+input[type=text] {
+  padding: 15px;
+  margin-top: 8px;
+  margin-left:155px;
+   font-size: 13px;
+   border:0.5px 0.5px 0.5px 0.5px;
+      border-color:#f2f2f2 ;
+     border-radius: 5px;  
+     background-color:#f2f2f2 ;
+   }
+   
+   .search-container button {
+    padding: 10px 10px;
+     margin-top: 10px;
+     margin-right: 12px;
+     border-color:#f2f2f2 ;
+     font-size: 21px;
+     border-radius: 5px;  
+     cursor: pointer;
+   }
+   
+   .search-container button:hover {
+     background:  rgb(47, 85, 189);
+   }
+   #sname
+   {
+       padding-right: 350px;
+      color:rgb(41, 37, 37);
+      color:grey;
+   }
+   input[type=file]{
+     width:90px;
+     color:transparent;
+     border:none;
+   }
+   #icon
+   {
+     width:30px;
+     cursor:pointer;
+   }
+
+   #MText
+{
+    color:white;
+    font-size: 80px;
+    margin-top:240px;
+    margin-left: 270px;
+    font-weight: 100;
+    font-family: 'Times New Roman';
+}
+
+.row {
+
+  color:white
+}

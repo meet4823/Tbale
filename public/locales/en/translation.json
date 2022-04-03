@@ -1,0 +1,37 @@
+{
+    "Nav": {
+        "1": "Home",
+        "2":"Stream",
+        "3":"Library",
+        "4":"Contact Us",
+        "5":"Log Out"
+    },
+    "Search": {
+        "1": "Search for artists,bands,tracks,podcasts "
+    },
+    "Upload":
+    {
+        "1":"Upload Your Own"
+    },
+    "Or":
+    {
+        "1":"or"
+    },
+    "Here":
+    {
+        "1":"Here is what you have uploaded"
+    },
+    "Song":
+    {
+        "1":"Song Name",
+        "2":"Song Size"
+    },
+    "Title":
+    {
+        "1":"What's Next In Music"
+    },
+    "Fav":
+    {
+        "1":"Favourites"
+    }
+}
